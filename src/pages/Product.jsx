@@ -123,7 +123,7 @@ function Product() {
 
         {productSections.map((section) => (
           <section className="catalog-section" key={section.title}>
-            <div className="section-header">
+            <div className="product-section-header">
               <h2>
                 <i className={section.icon} /> {section.title}
               </h2>
@@ -135,6 +135,7 @@ function Product() {
                   <img
                     src={typeof img === 'string' ? img : img.src}
                     alt={`${section.title} ${idx + 1}`}
+                    loading="lazy"
                   />
                   <div className="image-overlay">
                     <h5>
@@ -152,7 +153,7 @@ function Product() {
         ))}
 
         <section className="brand-section">
-          <div className="section-header">
+          <div className="product-section-header">
             <h2>
               <i className="bi bi-grid-3x3-gap-fill" /> Brand Company Logos
             </h2>

@@ -159,7 +159,7 @@ function Garments() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      goNext()
+      setActiveSlide((prev) => (prev + 1) % slides.length)
     }, 5000)
 
     return () => clearInterval(intervalId)
@@ -202,7 +202,7 @@ function Garments() {
                 key={`${slide.title}-${index}`}
                 className={`slide-item ${getSlideRole(index)}`}
               >
-                <img src={slide.image.src} alt={slide.title} />
+                <img src={slide.image.src} alt={slide.title} loading="lazy" />
               </article>
             ))}
           </div>
@@ -214,7 +214,10 @@ function Garments() {
               </p>
               <h2 ref={titleRef}>{slides[activeSlide].title}</h2>
               <h3 ref={subTitleRef}>{slides[activeSlide].subtitle}</h3>
-              <p ref={paraRef}>{slides[activeSlide].desc}</p>
+              <p ref={paraRef}>
+                {slides[activeSlide].desc ??
+                  'Comfort-first everyday essentials with reliable stitching and durable fabric quality.'}
+              </p>
             </div>
             <div className="slider-controls">
               <button type="button" onClick={goPrev} aria-label="Previous slide">

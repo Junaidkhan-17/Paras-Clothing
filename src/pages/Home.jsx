@@ -40,7 +40,7 @@ function Home() {
               9422147424
             </span>
           </div>
-          <div className="hero-content">
+          <div className="home-hero-content">
             <div className="hero-left">
               <p className="hero-kicker">SINCE 1979</p>
               <h1>PARAS DRESSES</h1>
@@ -94,6 +94,7 @@ function Home() {
             <img
               src={schooluniform}
               alt="School uniform collection"
+              loading="lazy"
             />
             <div className="gallery-overlay">
               <h4>School Uniform Collection</h4>
@@ -104,6 +105,7 @@ function Home() {
             <img
               src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
               alt="Garment section"
+              loading="lazy"
             />
             <div className="gallery-overlay">
               <h4>Daily Garments</h4>
@@ -113,6 +115,7 @@ function Home() {
             <img
               src={collageuniform}
               alt="College uniform section"
+              loading="lazy"
             />
             <div className="gallery-overlay">
               <h4>College Uniforms</h4>

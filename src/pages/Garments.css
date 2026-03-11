@@ -2,11 +2,6 @@
   background: linear-gradient(150deg, #dfe3e8 0%, #e9ecef 55%, #d5dbe1 100%);
 }
 
-.page-shell {
-  padding-left: clamp(0.9rem, 3vw, 2.3rem);
-  padding-right: clamp(0.9rem, 3vw, 2.3rem);
-}
-
 .garments-intro {
   text-align: center;
   max-width: 780px;
@@ -176,5 +171,9 @@
   .slide-content {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+
+  .slider-controls {
+    margin-top: 0.6rem;
   }
 }

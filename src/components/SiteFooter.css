@@ -1,6 +1,7 @@
 .site-footer {
   background: linear-gradient(110deg, var(--brand-deep), #111e43);
   color: rgba(255, 255, 255, 0.9);
+  margin-top: 1rem;
 }
 
 .site-footer h6 {
@@ -10,4 +11,11 @@
 
 .site-footer p {
   font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+@media (max-width: 767px) {
+  .site-footer .text-md-end {
+    text-align: left !important;
+  }
 }

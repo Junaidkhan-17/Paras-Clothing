@@ -1,6 +1,7 @@
 .site-navbar {
-  background: linear-gradient(90deg, #fff5cc, #ffeb86 35%, #ffe785 68%, #fff9e3);
-  box-shadow: 0 10px 24px rgba(10, 20, 45, 0.14);
+  backdrop-filter: blur(8px);
+  background: linear-gradient(90deg, rgba(255, 245, 204, 0.96), rgba(255, 235, 134, 0.94) 35%, rgba(255, 231, 133, 0.94) 68%, rgba(255, 249, 227, 0.96));
+  box-shadow: 0 10px 24px rgba(10, 20, 45, 0.1);
   border-bottom: 1px solid rgba(19, 40, 112, 0.12);
 }
 
@@ -39,9 +40,8 @@
 }
 
 .brand-logo {
-  width: 150px;
-  height: 35px;
-
+  width: clamp(120px, 15vw, 150px);
+  height: auto;
 }
 
 .brand-mark small {
@@ -73,6 +73,7 @@
   border-radius: 999px;
   font-weight: 700;
   transition: all 0.25s ease;
+  border: 0;
 }
 
 .call-btn:hover {
@@ -82,7 +83,31 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-toggler {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.75rem;
+    padding: 0.7rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(29, 47, 121, 0.12);
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
   .nav-pill {
     margin-top: 6px;
+    width: 100%;
+  }
+
+  .call-btn {
+    width: 100%;
+    text-align: center;
   }
 }

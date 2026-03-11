@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './SiteNavbar.css'
 import paraslogo from "../image/paraslogo.png";
@@ -5,9 +6,12 @@ import paraslogo from "../image/paraslogo.png";
 function SiteNavbar() {
   const phoneNumber = '9422147424'
   const dialNumber = '+919422147424'
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const getClassName = ({ isActive }) =>
     `nav-link nav-pill ${isActive ? 'active' : ''}`
+
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <header className="sticky-top">
@@ -19,36 +23,38 @@ function SiteNavbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#siteNav"
             aria-controls="siteNav"
-            aria-expanded="false"
+            aria-expanded={isMenuOpen}
             aria-label="Toggle navigation"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
           >
             <i className="bi bi-list fs-3" />
           </button>
-          <div className="collapse navbar-collapse justify-content-end" id="siteNav">
+          <div
+            className={`collapse navbar-collapse justify-content-end ${isMenuOpen ? 'show' : ''}`}
+            id="siteNav"
+          >
             <ul className="navbar-nav align-items-lg-center gap-lg-2">
               <li className="nav-item">
-                <NavLink className={getClassName} to="/">
+                <NavLink className={getClassName} to="/" onClick={closeMenu}>
                   <i className="bi bi-house-door me-2" />
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={getClassName} to="/product">
+                <NavLink className={getClassName} to="/product" onClick={closeMenu}>
                   <i className="bi bi-bag-heart me-2" />
                   Product
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={getClassName} to="/garments">
+                <NavLink className={getClassName} to="/garments" onClick={closeMenu}>
                   <i className="bi bi-stars me-2" />
                   Garments
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className={getClassName} to="/about">
+                <NavLink className={getClassName} to="/about" onClick={closeMenu}>
                   <i className="bi bi-people me-2" />
                   About Us
                 </NavLink>
@@ -57,9 +63,7 @@ function SiteNavbar() {
                 <a
                   className="call-btn"
                   href={`tel:${dialNumber}`}
-                  onClick={() => {
-                    window.location.href = `tel:${dialNumber}`
-                  }}
+                  onClick={closeMenu}
                   aria-label={`Call ${phoneNumber}`}
                 >
                   <i className="bi bi-telephone-fill me-2" />

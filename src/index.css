@@ -4,10 +4,11 @@
   --brand-blue: #143ca8;
   --brand-purple: #ad36b4;
   --brand-deep: #151515;
+  --surface-soft: #f8fbff;
   --surface: #fffef6;
   --text: #1f1f1f;
   --shadow: 0 14px 30px rgba(20, 60, 168, 0.14);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: var(--text);
@@ -24,11 +25,17 @@
 body {
   margin: 0;
   min-width: 320px;
-  background: radial-gradient(circle at top right, #fff7c9 0%, #ffffff 60%);
+  background: linear-gradient(180deg, #f7f9ff 0%, #fcfdff 100%);
+  color: var(--text);
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 

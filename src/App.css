@@ -2,8 +2,19 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 216, 95, 0.2), transparent 36%),
+    radial-gradient(circle at 100% 10%, rgba(48, 95, 225, 0.14), transparent 32%),
+    #f7f9ff;
 }
 
 .page-area {
   flex: 1;
+}
+
+.page-shell {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+  padding-left: clamp(0.9rem, 3vw, 2.3rem);
+  padding-right: clamp(0.9rem, 3vw, 2.3rem);
 }

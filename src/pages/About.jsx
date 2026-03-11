@@ -87,7 +87,7 @@ function About() {
     <section className="about-page">
       <div className="container-fluid page-shell py-5">
         <div className="about-hero">
-          <div className="hero-content">
+          <div className="about-hero-content">
             <img className="profile" src={parasuncle} alt="Trilok Jain profile" />
             <h1>A Trusted Uniform Partner Since 1979</h1>
             <p>
@@ -123,11 +123,12 @@ function About() {
             <article className="story-card" key={section.title}>
               <div className="story-image-grid">
                 {section.images.map((image, index) => (
-                  <div className="story-image-wrap" key={`${section.title}-${index}`}>
+              <div className="story-image-wrap" key={`${section.title}-${index}`}>
                     <img
                       src={typeof image === 'string' ? image : image.src}
                       alt={`${section.title} ${index + 1}`}
                       className="story-image"
+                      loading="lazy"
                     />
                   </div>
                 ))}

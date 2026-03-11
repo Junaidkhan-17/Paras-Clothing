@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import SiteNavbar from './components/SiteNavbar'
 import SiteFooter from './components/SiteFooter'
 import Home from './pages/Home'
@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-shell">
         <SiteNavbar />
         <main className="page-area">
@@ -23,7 +23,7 @@ function App() {
         </main>
         <SiteFooter />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
