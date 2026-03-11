@@ -1,0 +1,13 @@
+.site-footer {
+  background: linear-gradient(110deg, var(--brand-deep), #111e43);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer h6 {
+  font-weight: 700;
+  color: var(--brand-yellow);
+}
+
+.site-footer p {
+  font-size: 0.95rem;
+}

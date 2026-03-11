@@ -1,0 +1,51 @@
+:root {
+  --brand-yellow: #f3d40f;
+  --brand-cream: #fff2ca;
+  --brand-blue: #143ca8;
+  --brand-purple: #ad36b4;
+  --brand-deep: #151515;
+  --surface: #fffef6;
+  --text: #1f1f1f;
+  --shadow: 0 14px 30px rgba(20, 60, 168, 0.14);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--surface);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: radial-gradient(circle at top right, #fff7c9 0%, #ffffff 60%);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
