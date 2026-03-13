@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
-import collageuniform from '../image/collageuniform.jpg'
-import schooluniform from '../image/schooluniform.jpeg'
+import collagestudent from '../image/collagestudent.png'
+import studentuniform from '../image/studentuniform.png'
+
 
 const schoolPartners = [
   'Yashoda Group of Schools',
@@ -90,18 +91,18 @@ function Home() {
         </div>
 
         <div className="uniform-gallery mt-4">
-          <article className="gallery-card gallery-card-lg">
+          <article className="gallery-card ">
             <img
-              src={schooluniform}
+              src={studentuniform}
               alt="School uniform collection"
               loading="lazy"
             />
             <div className="gallery-overlay">
-              <h4>School Uniform Collection</h4>
+              <h4>School Uniform </h4>
               <p>Tailored fits for all age groups.</p>
             </div>
           </article>
-          <article className="gallery-card">
+          <article className="gallery-card ">
             <img
               src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
               alt="Garment section"
@@ -113,7 +114,7 @@ function Home() {
           </article>
           <article className="gallery-card">
             <img
-              src={collageuniform}
+              src={collagestudent}
               alt="College uniform section"
               loading="lazy"
             />
