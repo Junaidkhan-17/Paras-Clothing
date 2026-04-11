@@ -40,37 +40,6 @@ const storySections = [
       'Paras Dresses specializes in garments, school uniforms, and college uniforms. We pay close attention to sizing, stitching strength, and fabric comfort so students can wear uniforms confidently through busy academic schedules. Alongside uniforms, we support everyday garment needs with the same quality standards.',
   },
   {
-    title: 'Our Experience with Schools and Colleges',
-    icon: 'bi bi-buildings',
-    images: [
-      'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1400&q=80',
-      'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1400&q=80',
-    ],
-    text:
-      'Since 1979, Paras Dresses has provided uniforms to 16 schools and 6 colleges. These partnerships are built on trust, timely delivery, and consistency in quality. We understand academic calendars and institutional requirements, which allows us to support management teams and families without last-minute stress.',
-  },
-  
-  {
-    title: 'Our Commitment to Affordable Pricing',
-    icon: 'bi bi-cash-coin',
-    images: [
-      'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1400&q=80',
-      'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1400&q=80',
-    ],
-    text:
-      'Reasonable pricing is a core promise at Paras Dresses. We believe quality uniforms should stay accessible for every household. Because our manufacturing process is managed internally, we can reduce unnecessary cost layers and provide excellent value without compromising durability or finishing standards.',
-  },
-  {
-    title: 'Why Customers Trust Paras Dresses',
-    icon: 'bi bi-shield-check',
-    images: [
-      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80',
-      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80',
-    ],
-    text:
-      'Paras Dresses is led by Trilok Jain, who brings more than 56 years of garment business experience. Customers trust us because we communicate clearly, suggest what is practical, and stand behind our product quality. Many families who once purchased uniforms for themselves now return with their children.',
-  },
-  {
     title: 'Our Future Vision',
     icon: 'bi bi-stars',
     images: [
@@ -95,12 +64,14 @@ function About() {
               and college uniforms, in-house manufacturing, and dependable
               service at affordable prices.
             </p>
+            <p>We also serve 12 Branded companies undergarments and all type of nigt wears</p>
+            <p>Our mastery is in goun collection of 8 companies</p>
             <div className="hero-badges">
               <span>
                 <i className="bi bi-calendar-event" /> Established 1979
               </span>
               <span>
-                <i className="bi bi-person-badge" /> Trilok Jain, 56+ years
+                <i className="bi bi-person-badge" /> Trilok Jain, 46+ years
                 experience
               </span>
               <span>

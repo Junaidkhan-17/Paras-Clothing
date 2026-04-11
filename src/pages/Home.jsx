@@ -5,19 +5,20 @@ import studentuniform from '../image/studentuniform.png'
 
 
 const schoolPartners = [
-  'Yashoda Group of Schools',
-  'Hadas Highschool',
+  'Yashoda Group of Schools and Collages',
+  'Hadas High School and Junior College',
   'BKVV',
   'Paranjape School',
   'Saraswati Vidhyalaya',
-  'CP and Berar Highschool',
+  'CP and Berar Junior College',
   'Bishop Cotton Highschool',
   'RKVM',
-  'Blue Bell Convent',
+  'Blue Bells Convent',
   'Dolphin School',
-  'Tejaswini Vidya Mandir',
+  'Tejaswini Vidya Mandir, Hingna',
   'Vidya Sadhna',
   'Star Kindergarten',
+  'LAD College',
 ]
 
 const collegePartners = [
@@ -45,7 +46,7 @@ function Home() {
             <div className="hero-left">
               <p className="hero-kicker">SINCE 1979</p>
               <h1>PARAS DRESSES</h1>
-              <h2>All Types of Uniforms, Designer & Planner</h2>
+              <h2>  Designer & Planner of Uniform's </h2>
               <p className="hero-text">
                 School and college uniforms, garments, and innerwear with
                 reliable quality, own manufacturing, and reasonable prices.
@@ -66,8 +67,8 @@ function Home() {
               <div className="hero-badge">Designer & Planner</div>
               <div className="stats-grid">
                 <article>
-                  <h3>56+</h3>
-                  <p>Years Legacy</p>
+                  <h3>46+</h3>
+                  <p>Years of Experience</p>
                 </article>
                 <article>
                   <h3>16</h3>
@@ -131,7 +132,7 @@ function Home() {
               <i className="bi bi-patch-check-fill" />
               <h5>Trusted Since 1979</h5>
               <p>
-                56+ years of service in garments, school and college uniform
+                46+ years of service in garments, school and college uniform
                 planning, stitching, and delivery.
               </p>
             </article>
