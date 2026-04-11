@@ -64,8 +64,8 @@ function About() {
               and college uniforms, in-house manufacturing, and dependable
               service at affordable prices.
             </p>
-            <p>We also serve 12 Branded companies undergarments and all type of nigt wears</p>
-            <p>Our mastery is in goun collection of 8 companies</p>
+            <p>We also serve 12 Branded companies undergarments and all type of night wears.</p>
+            <p>Our mastery is in goun collection of 8 companies.</p>
             <div className="hero-badges">
               <span>
                 <i className="bi bi-calendar-event" /> Established 1979
